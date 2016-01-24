@@ -3,4 +3,26 @@
   <groupId>apptest</groupId>
   <artifactId>apptest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+
+			<resource>
+				<directory>build</directory>
+				<includes>
+					<include>*</include>
+				</includes>
+				<targetPath>${project.build.directory}/</targetPath>
+			</resource>
+		</resources>
+
+	</build>
+
+
+
 </project>
